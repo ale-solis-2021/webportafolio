@@ -1,0 +1,574 @@
+body {
+    background-color: #57c0a6 !important; /* Color de fondo para toda la página */
+}
+
+#sobremi {
+    background: linear-gradient(135deg, #77c9b4 0%, #3d9e86 100%) !important;;
+}
+
+#proyecto {
+    background-color: #48ad7e !important;;
+}
+
+#contacto {
+    background-color: #48ad7e  !important;;
+}
+
+
+
+
+/* Estilo para la navbar */
+.navbar {
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar:hover {
+    background-color: #007bff;
+    box-shadow: 0 8px 15px rgba(0, 123, 255, 0.2);
+}
+
+/* Animación del logo */
+.logo-animated {
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo-animated:hover {
+    transform: rotate(360deg);
+}
+
+/* Estilos de los links del navbar */
+.navbar-nav .nav-link {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #343a40;
+    transition: color 0.3s ease, transform 0.3s ease;
+    padding: 0.5rem 1rem;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #2e79af;
+    transform: scale(1.1);
+}
+
+.navbar-nav .nav-link.active {
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Efecto smooth para el scroll cuando se hace clic en el enlace */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding-top: 80px;
+}
+
+/* Estilo de la sección de "Sobre mí" */
+#sobremi {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 4rem 0;
+}
+
+#sobremi h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #343a40;
+    margin-bottom: 1rem;
+}
+
+#sobremi .lead {
+    font-size: 1.25rem;
+    color: #6c757d;
+}
+
+#sobremi .description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #495057;
+}
+
+.image-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.img-fluid.rounded-circle {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-zoom:hover {
+    transform: scale(1.2);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+/* Estilo de los botones sociales */
+.social-icons .btn {
+    margin-right: 10px;
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.social-icons .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.social-icons .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.social-icons .btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.social-icons .btn-secondary:hover {
+    background-color: #343a40;
+}
+
+/* Estilos para los títulos de ambas secciones */
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #343a40;
+    position: relative;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+h2::after {
+    content: '';
+    width: 60px;
+    height: 5px;
+    background-color: #28a745;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+}
+
+h2:hover {
+    color: #28a745;
+    transform: scale(1.1);
+}
+
+h2:hover::after {
+    width: 100px;
+    background-color: #343a40;
+}
+
+/* Estilos para las imágenes dentro de las tarjetas */
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Estilos para la sección Proyectos Front-End */
+#proyectos-frontend {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, #a6e2ce, #4ac79d); /* Degradado de verdes */
+    color: white; /* Texto en blanco */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+#proyectos-frontend h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: rgb(8, 8, 8);
+}
+
+#proyectos-frontend .card {
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo de la tarjeta ligeramente transparente */
+    border: none; /* Quita el borde de la tarjeta */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    transition: transform 0.3s ease-in-out;
+}
+
+#proyectos-frontend .card-title,
+#proyectos-frontend .card-text {
+    color: rgb(10, 10, 10); /* Color del texto */
+}
+
+#proyectos-frontend .btn-success {
+    background-color: #1aaa7a;
+    border-color: #53afa3;
+}
+
+#proyectos-frontend .btn-success:hover {
+    background-color: #0d7760;
+    border-color: #25bbb3;
+}
+
+/* Estilo al hacer hover en las tarjetas */
+#proyectos-frontend .card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Estilos para la sección Proyectos Back-End */
+#proyectos-backend {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, #a6e2ce, #34c595); /* Degradado de verdes */
+    color: rgb(5, 5, 5);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Transición de secciones */
+/* Elimina la opacidad inicial para que las secciones sean visibles desde el principio */
+#proyectos-frontend,
+#proyectos-backend {
+    opacity: 1; /* Ahora siempre visibles */
+    transform: none; /* Elimina la animación de deslizamiento */
+}
+
+/* Animación cuando una sección es visible */
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Sección Testimonios */
+.testimonios {
+    padding: 40px;
+    background-color: #f8f9fa;
+}
+
+.testimonios h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #343a40;
+    margin-bottom: 1rem;
+}
+
+#mensaje-no-testimonios {
+    font-size: 1.2rem;
+    color: #6c757d;
+    font-style: italic;
+}
+
+/* Grid de testimonios */
+.testimonios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+.testimonio {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonio:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.testimonio-imagen {
+    height: 150px;
+    width: 150px;
+    margin-bottom: 20px;
+    border: 4px solid #007bff;
+}
+
+.testimonio-texto {
+    font-size: 18px;
+    font-family: 'Share Tech Mono', monospace;
+    color: #343a40;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.testimonio-info {
+    text-align: center;
+}
+
+.testimonio-info .cliente {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.testimonio-info .cargo {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+/* Estilo de la sección de contacto */
+#contacto {
+    background-color: #f8f9fa;
+    padding: 3rem 0;
+}
+
+#contacto h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #343a40;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+#contacto h1::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    background-color: #007bff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+}
+
+/* Centrar el formulario y ajustarlo a un tamaño más pequeño */
+.contact-form {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    max-width: 600px; /* Tamaño máximo */
+    margin: 0 auto; /* Centramos el formulario */
+}
+
+.contact-form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilo para los campos del formulario */
+.contact-form .form-control {
+    border-radius: 50px;
+    border: 2px solid #e9ecef;
+    padding: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+
+.contact-form textarea {
+    resize: none;
+    border-radius: 20px;
+}
+
+.contact-form .btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    font-size: 1.25rem;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form .btn:hover {
+    background-color: #0056b3;
+    box-shadow: 0 8px 15px rgba(0, 123, 255, 0.3);
+}
+
+
+
+ /* Estilos generales para el chatbot */
+ #chatbot {
+    margin-top: 2rem;
+}
+
+/* Caja del chatbot */
+#chatbot-frame {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px; /* Ajuste de ancho */
+    height: 450px; /* Ajuste de altura */
+    background: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+    z-index: 1000;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+    display: none; /* Inicialmente oculto */
+}
+
+/* Botones de acción */
+.btn-chatbot {
+    margin-top: 1rem;
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+}
+
+/* Botón para abrir el chatbot */
+#open-chatbot-btn {
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+#open-chatbot-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Botón para cerrar el chatbot */
+#close-chatbot-btn {
+    background-color: #dc3545;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+#close-chatbot-btn:hover {
+    background-color: #c82333;
+}
+/* Responsivo para dispositivos más pequeños */
+@media (max-width: 576px) {
+    #chatbot-frame {
+        width: 80%; /* Ajuste de ancho responsivo */
+        height: 400px; /* Ajuste de altura responsivo */
+        right: 10%;
+        bottom: 10px;
+    }
+}
+
+/* Estilo para el footer */
+#main-footer {
+    padding-top: 3rem;
+    background-color: #3e4144;
+}
+
+#main-footer h5 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    position: relative;
+    color: #ffffff;
+}
+
+#main-footer h5::after {
+    content: '';
+    width: 50px;
+    height: 3px;
+    background-color: #28a745;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: width 0.3s ease-in-out;
+}
+
+#main-footer h5:hover::after {
+    width: 80px;
+}
+
+#main-footer p, #main-footer ul li a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: #d3d3d3;
+    line-height: 1.8;
+    transition: color 0.3s ease;
+}
+
+#main-footer p:hover, #main-footer ul li a:hover {
+    color: #108659;
+}
+
+#main-footer ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+#main-footer ul li {
+    margin-bottom: 10px;
+}
+
+#main-footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#main-footer a:hover {
+    color: #28a745;
+    text-decoration: none;
+}
+
+/* Estilos de redes sociales */
+.social-icons a {
+    font-size: 1.8rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.3);
+    color: #28a745;
+}
+
+/* Estilo de la parte inferior del footer */
+#main-footer .bg-secondary {
+    background-color: #343a40 !important;
+    color: #ffffff;
+    font-size: 0.9rem;
+}
+
+#main-footer .bg-secondary p {
+    margin-bottom: 0;
+}
+/* Estilos para los íconos sociales */
+.social-icons a {
+    font-size: 1.5rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #00aced; /* Cambia el color del ícono en hover, puedes cambiar el color según el branding de cada red social */
+    transform: scale(1.2); /* Aumenta el tamaño del ícono en hover */
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    #main-footer {
+        text-align: center;
+    }
+    .social-icons a {
+        display: inline-block;
+        margin: 0 10px;
+    }
+}
+
